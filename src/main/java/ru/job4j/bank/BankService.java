@@ -13,18 +13,18 @@ public class BankService {
     }
 
     public void addAccount(String passport, Account account) {
-        User a = findByPassport(passport); //получили пользователя по паспорту, записали в переменную
-        if (a != null) { // проверили что переменная не null
-            List<Account> b = users.get(a); // по переменной получили список аккаунтов из карты , записали полученный список в переменную
-            if (!b.contains(account)) { //проверили список есть ли там добавляемый аккаунт с помощью contains
-                users.put(passport, new ArrayList<Account>(account.setRequisite())); // не пойму что нужно сделать?
+        User findUser = findByPassport(passport);
+        if (findUser != null) {
+            List<Account> listAccount = users.get(findUser);
+            if (!listAccount.contains(account)) {
+                listAccount.add(account);
             }
         }
     }
 
     public User findByPassport(String passport) {
         for (User user : users.keySet()) {
-            if (user.getPassport().contains(passport)) {
+            if (user.getPassport().contains(passport) && user.getPassport().length() == passport.length()) {
                 return user;
             }
         }
@@ -44,10 +44,16 @@ public class BankService {
         return null;
     }
 
-    public boolean transferMoney(String srcPassport, String srcRequisite,
-                                 String destPassport, String destRequisite, double amount) {
-        //это пока не трогал
+    public boolean transferMoney(String srcPassport, String srcRequisite, String destPassport, String destRequisite, double amount) {
         boolean rsl = false;
+        Account srcAccount = findByRequisite(srcPassport, srcRequisite);
+        Account destAccount = findByRequisite(destPassport, destRequisite);
+        if (srcAccount != null && srcAccount.getBalance() >= amount) {
+            srcAccount.setBalance(srcAccount.getBalance() - amount);
+            destAccount.setBalance(destAccount.getBalance() + amount);
+            rsl = true;
+        }
+
         return rsl;
     }
 }
