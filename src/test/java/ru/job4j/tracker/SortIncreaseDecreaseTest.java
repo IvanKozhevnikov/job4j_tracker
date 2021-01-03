@@ -11,7 +11,7 @@ import static org.hamcrest.core.Is.is;
 
 public class SortIncreaseDecreaseTest {
     @Test
-    public void SortIncrease() {
+    public void sortIncrease() {
         List<Item> item = Arrays.asList(
                 new Item(4, "Fix bugs"),
                 new Item(2, "Impl task"),
@@ -27,7 +27,7 @@ public class SortIncreaseDecreaseTest {
     }
 
     @Test
-    public void SortDecrease() {
+    public void sortDecrease() {
         List<Item> item = Arrays.asList(
                 new Item(4, "Fix bugs"),
                 new Item(2, "Impl task"),
