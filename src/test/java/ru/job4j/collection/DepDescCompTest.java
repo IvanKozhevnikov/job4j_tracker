@@ -14,6 +14,7 @@ public class DepDescCompTest {
                 "K2/SK1/SSK2",
                 "K2/SK1/SSK1"
         );
+        System.out.println(rsl);
         assertThat(rsl, greaterThan(0));
     }
 
@@ -23,6 +24,7 @@ public class DepDescCompTest {
                 "K2",
                 "K2/SK1"
         );
+        System.out.println(rsl);
         assertThat(rsl, lessThan(0));
     }
 
