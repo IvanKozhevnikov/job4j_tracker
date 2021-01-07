@@ -27,5 +27,4 @@ public class DepDescCompTest {
         System.out.println(rsl);
         assertThat(rsl, lessThan(0));
     }
-
 }
