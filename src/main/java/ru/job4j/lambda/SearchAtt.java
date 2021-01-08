@@ -3,57 +3,43 @@ package ru.job4j.lambda;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 public class SearchAtt {
 
-    private static Attachment filter(int att, Function<Attachment, Attachment> func, Supplier<Integer> initValue) {
+    private static Attachment filter(List<Attachment> list, Function<Attachment, Attachment> func) {
         List<Attachment> rsl = new ArrayList<>();
+        for (Attachment attachment : list) {
+            rsl = (List<Attachment>) func.apply(list.get(attachment.getSize(), attachment.getName()));
 
-        if (att > initValue || att.contains("bag")) {
-            func.apply(rsl.add(att));
         }
         return (Attachment) rsl;
     }
 
-
-    public static List<Attachment> filterSize(int att) {
+    public static List<Attachment> filterSize(List<Attachment> list) {
         Function<Attachment, Attachment> func = new Function<Attachment, Attachment>() {
             @Override
             public Attachment apply(Attachment attachment) {
-                return attachment;
+                List<Attachment> rsl = new ArrayList<>();
+                if (attachment.getSize() > 100) {
+                    rsl.add(new Attachment(attachment.getName(), attachment.getSize()));
+                }
+                return (Attachment) rsl;
             }
         };
-        Supplier<Integer> initValue = new Supplier<Integer>() {
-            @Override
-            public Integer get() {
-                return 100;
-            }
-        };
-        return filter(att, func, initValue);
+        return (List<Attachment>) filter(list, func);
     }
 
-    public static List<Attachment> filterName(String att) {
+    public static List<Attachment> filterName(List<Attachment> list) {
         Function<Attachment, Attachment> func = new Function<Attachment, Attachment>() {
             @Override
             public Attachment apply(Attachment attachment) {
-                return attachment;
-
+                List<Attachment> rsl = new ArrayList<>();
+                if (attachment.getName().contains("bug")) {
+                    rsl.add(new Attachment(attachment.getName(), attachment.getSize()));
+                }
+                return (Attachment) rsl;
             }
         };
-        Supplier<String> initValue = new Supplier<String>() {
-            @Override
-            public String get() {
-                return "bug";
-            }
-        };
-        return filter(att, func, initValue);
-    }
-
-
-    public static void main(String[] args) {
-
-        System.out.println(filterSize(100));
-        System.out.println(filterName("bag"));
+        return (List<Attachment>) filter(list, func);
     }
 }
