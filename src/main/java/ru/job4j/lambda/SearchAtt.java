@@ -9,7 +9,7 @@ public class SearchAtt {
     private static Attachment filter(List<Attachment> list, Function<Attachment, Attachment> func) {
         List<Attachment> rsl = new ArrayList<>();
         for (Attachment attachment : list) {
-            rsl = (List<Attachment>) func.apply(list.get(attachment.getSize(), attachment.getName()));
+           // rsl = (List<Attachment>) func.apply(list.get(attachment.getSize(), attachment.getName()));
 
         }
         return (Attachment) rsl;
