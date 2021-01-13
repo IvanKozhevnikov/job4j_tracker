@@ -2,7 +2,6 @@ package ru.job4j.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -13,10 +12,9 @@ public class SearchAtt {
         for (Attachment att : list) {
             if (func.test(att)) {
                 rsl.add(att);
-                return rsl;
             }
         }
-        return null;
+        return rsl;
     }
 
     public static List<Attachment> filterSize(List<Attachment> list) {
@@ -30,8 +28,9 @@ public class SearchAtt {
     }
 
     public static void main(String[] args) {
-        List<Attachment> list = Collections.singletonList(
-                new Attachment("bug", 110));
+        List<Attachment> list = Arrays.asList(
+                new Attachment("bug", 110),
+                new Attachment("func", 110));
         System.out.println(filterSize(list));
         System.out.println(filterName(list));
     }
