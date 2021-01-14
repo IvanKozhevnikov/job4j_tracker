@@ -4,7 +4,8 @@ import java.util.Objects;
 
 /**
  * Класс описывает модель пользователя банка.
- * Класс осуществляет доступ к полям passport и username и возможности их сравнения.
+ * Класс осуществляет доступ к полям passport и username
+ * и возможности их сравнения.
  *
  * @author IVAN KOZHEVNIKOV
  * @version 1.0

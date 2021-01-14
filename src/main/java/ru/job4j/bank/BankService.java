@@ -10,7 +10,8 @@ import java.util.Map;
  * в системе можно производить следующие действия
  * 1. Регистрировать пользователя.
  * 2. Удалять пользователя из системы.
- * 3. Добавлять пользователю банковский счет. У пользователя системы могут быть несколько счетов.
+ * 3. Добавлять пользователю банковский счет. У пользователя
+ * системы могут быть несколько счетов.
  * 4. Переводить деньги с одного банковского счета на другой счет.
  *
  * @author IVAN KOZHEVNIKOV
@@ -23,7 +24,8 @@ public class BankService {
     private Map<User, List<Account>> users = new HashMap<>();
 
     /**
-     * Метод принимает на вход номер паспорта, имя пользователя и добавляет эти данные в систему.
+     * Метод принимает на вход номер паспорта, имя пользователя
+     * и добавляет эти данные в систему.
      *
      * @param user пользователь который добавляется в систему.
      */
@@ -56,8 +58,10 @@ public class BankService {
      * Метод принимает на вход номер паспорта и
      * возвращает данные о пользователе если он есть в системе.
      *
-     * @param passport номер паспорта по которому осуществляется поиск пользователя.
-     * @return возвращает данные о пользователе если он есть в системе или null если нет.
+     * @param passport номер паспорта по которому осуществляется
+     *                 поиск пользователя.
+     * @return возвращает данные о пользователе если он есть в
+     * системе или null если нет.
      */
     public User findByPassport(String passport) {
         for (User user : users.keySet()) {
@@ -74,7 +78,8 @@ public class BankService {
      * вначале осуществляется поиск наличия пользователя в системе,
      * затем по реквизитам осуществляется поиск счёта.
      *
-     * @param passport  номер паспорта по которому осуществляется поиск пользователя.
+     * @param passport  номер паспорта по которому осуществляется
+     *                  поиск пользователя.
      * @param requisite реквизиты по которым осуществляется поиск счёта.
      * @return метод возвращает счёт если он найден или null если нет.
      */
@@ -113,7 +118,8 @@ public class BankService {
         boolean rsl = false;
         Account srcAccount = findByRequisite(srcPassport, srcRequisite);
         Account destAccount = findByRequisite(destPassport, destRequisite);
-        if ((srcAccount != null) && (destAccount != null) && (srcAccount.getBalance() >= amount)) {
+        if ((srcAccount != null) && (destAccount != null)
+                && (srcAccount.getBalance() >= amount)) {
             srcAccount.setBalance(srcAccount.getBalance() - amount);
             destAccount.setBalance(destAccount.getBalance() + amount);
             rsl = true;

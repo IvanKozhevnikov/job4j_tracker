@@ -7,7 +7,8 @@ import java.util.function.Predicate;
 
 public class SearchAtt {
 
-    private static List<Attachment> filter(List<Attachment> list, Predicate<Attachment> func) {
+    private static List<Attachment> filter(List<Attachment> list
+            , Predicate<Attachment> func) {
         List<Attachment> rsl = new ArrayList<>();
         for (Attachment att : list) {
             if (func.test(att)) {
@@ -23,7 +24,8 @@ public class SearchAtt {
     }
 
     public static List<Attachment> filterName(List<Attachment> list) {
-        Predicate<Attachment> func = attachment -> attachment.getName().contains("bug");
+        Predicate<Attachment> func = attachment ->
+                attachment.getName().contains("bug");
         return filter(list, func);
     }
 
