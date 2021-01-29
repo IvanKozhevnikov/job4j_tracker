@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-29T20:29:46.226Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="x194AG3z-r6zETJ_ZYC2" version="14.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-29T20:32:06.709Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="4RKC-PwFdOwnkEMp-CMo" version="14.2.7" type="github">
   <diagram id="wdKQzExWJ-slzCI3__An" name="Page-1">
     <mxGraphModel dx="874" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -50,14 +50,26 @@
         <mxCell id="ThsmSveKd6_xXnNG1gCC-3" value="Случайный выбор рас" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="280" y="320" width="120" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-4" target="DzrnLzvkAPXYEKWI9zlB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-4" value="Раса эльфов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="85" y="430" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-5" target="DzrnLzvkAPXYEKWI9zlB-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-5" value="Раса орков" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="345" y="430" width="120" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-6" target="DzrnLzvkAPXYEKWI9zlB-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-6" value="Раса нежити" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="215" y="430" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-7" target="DzrnLzvkAPXYEKWI9zlB-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-7" value="Раса людей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="475" y="430" width="120" height="30" as="geometry" />
@@ -103,16 +115,16 @@
           <mxGeometry x="564" y="110" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-2" value="Возможности персонажей расы эльфов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="85" y="470" width="120" height="40" as="geometry" />
+          <mxGeometry x="85" y="500" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-3" value="Возможности персонажей расы орков" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="345" y="470" width="120" height="40" as="geometry" />
+          <mxGeometry x="345" y="500" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-12" value="Возможности персонажей расы нежити" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="215" y="470" width="120" height="40" as="geometry" />
+          <mxGeometry x="215" y="500" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-13" value="Возможности персонажей расы людей" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="475" y="470" width="120" height="40" as="geometry" />
+          <mxGeometry x="475" y="500" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DzrnLzvkAPXYEKWI9zlB-14" target="DzrnLzvkAPXYEKWI9zlB-16">
           <mxGeometry relative="1" as="geometry">
