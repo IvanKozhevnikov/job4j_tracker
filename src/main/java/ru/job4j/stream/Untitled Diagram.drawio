@@ -1,65 +1,111 @@
-<mxfile host="app.diagrams.net" modified="2021-01-29T19:29:09.785Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="6EjJ1p_13q_AFaN9NjLC" version="14.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-29T19:58:01.421Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="CtjMxj0U7BR3SqJmc3Cf" version="14.2.7" type="github">
   <diagram id="wdKQzExWJ-slzCI3__An" name="Page-1">
-    <mxGraphModel dx="782" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1701" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ThsmSveKd6_xXnNG1gCC-1" value="Отряд расы (игрок)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="140" width="120" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ThsmSveKd6_xXnNG1gCC-2" value="Отряд расы (компьютер)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="180" width="120" height="30" as="geometry" />
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-1" value="Отряд расы" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="200" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-3" value="Случайный выбор рас" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="230" width="120" height="30" as="geometry" />
+          <mxGeometry x="330" y="260" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-4" value="Раса эльфов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="270" width="120" height="30" as="geometry" />
+          <mxGeometry x="280" y="370" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-5" value="Раса орков" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="360" width="120" height="30" as="geometry" />
+          <mxGeometry x="540" y="370" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-6" value="Раса нежити" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="450" width="120" height="30" as="geometry" />
+          <mxGeometry x="410" y="370" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-7" value="Раса людей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="540" width="120" height="30" as="geometry" />
+          <mxGeometry x="670" y="370" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-8" target="DzrnLzvkAPXYEKWI9zlB-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="319" y="144" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="200" />
+              <mxPoint x="220" y="190" />
+              <mxPoint x="270" y="190" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-8" value="Уровень жизни персонажа" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="630" width="120" height="30" as="geometry" />
+          <mxGeometry x="120" y="200" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.067;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-9" target="DzrnLzvkAPXYEKWI9zlB-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="274" y="140" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-9" value="Улучшение персонажа" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="670" width="120" height="30" as="geometry" />
+          <mxGeometry x="-10" y="200" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-10" value="Группа привилегированных персонажей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="710" width="120" height="40" as="geometry" />
+          <mxGeometry x="150" y="370" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-11" value="Группа обычных&lt;br&gt;&amp;nbsp;персонажей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="760" width="120" height="40" as="geometry" />
+          <mxGeometry x="20" y="370" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-12" target="DzrnLzvkAPXYEKWI9zlB-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-12" value="Передвижение персонажей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="810" width="120" height="30" as="geometry" />
+          <mxGeometry x="580" y="110" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-13" target="DzrnLzvkAPXYEKWI9zlB-16">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ThsmSveKd6_xXnNG1gCC-13" value="Действия&lt;br&gt;персонажей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="850" width="120" height="30" as="geometry" />
+          <mxGeometry x="100" y="110" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-1" value="Статистика ходов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="890" width="120" height="30" as="geometry" />
+          <mxGeometry x="730" y="110" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-2" value="Возможности персонажей расы эльфов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="310" width="120" height="40" as="geometry" />
+          <mxGeometry x="280" y="410" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-3" value="Возможности персонажей расы орков" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="400" width="120" height="40" as="geometry" />
+          <mxGeometry x="540" y="410" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-12" value="Возможности персонажей расы нежити" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="490" width="120" height="40" as="geometry" />
+          <mxGeometry x="410" y="410" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-13" value="Возможности персонажей расы людей" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="580" width="120" height="40" as="geometry" />
+          <mxGeometry x="670" y="410" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DzrnLzvkAPXYEKWI9zlB-14" target="DzrnLzvkAPXYEKWI9zlB-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.338;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DzrnLzvkAPXYEKWI9zlB-14" target="DzrnLzvkAPXYEKWI9zlB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DzrnLzvkAPXYEKWI9zlB-14" target="ThsmSveKd6_xXnNG1gCC-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="35" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="DzrnLzvkAPXYEKWI9zlB-14" value="Heroes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="70" width="120" height="30" as="geometry" />
+          <mxGeometry x="350" y="20" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DzrnLzvkAPXYEKWI9zlB-16" target="DzrnLzvkAPXYEKWI9zlB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-16" value="Персонаж (игрок)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="110" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DzrnLzvkAPXYEKWI9zlB-17" target="ThsmSveKd6_xXnNG1gCC-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-17" value="Персонаж (компьютер)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="413.5" y="110" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ThsmSveKd6_xXnNG1gCC-13" target="ThsmSveKd6_xXnNG1gCC-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
