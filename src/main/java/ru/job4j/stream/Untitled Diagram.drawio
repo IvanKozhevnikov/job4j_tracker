@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2021-01-28T15:48:20.366Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="deTJXAGLg1EN9Pw6oWAM" version="14.2.7" type="github"><diagram id="wdKQzExWJ-slzCI3__An" name="Page-1">3ZhJj5swGIZ/DVJ7GAnbhOUYtqlUtZdUam8VEzyAxBIRZ5L019d4wwQiJVUjUC5fzGvjwPt83jBQUJ1e22SXf2tSXBrQTE8GCg0IHRfS2AlnIZg2F7K2SLkEemFT/MFCNIV6KFK8HzQkTVOSYjcUt01d4y0ZaEnbNsdhs/emHP7rLsnwSNhsk3Ks/ixSknPVhU6vf8FFlst/BrbHa6pENhZvss+TtDlqEooMFLRNQ3ipOgW47LyTvvD74iu16sFaXJNbbviR76vNB/6a2r9Pv+rvryALghfRy0dSHsQLG6FpeJERAoOi66LJYtzpvkXbSpFe8jJg0adVn5jqsoi0dhGL68/CCHKW7rbNoU5x94DAQP4xLwje7JJtV3uk6US1nFSlqBaPiluCT1c9AMpZmpG4qTBpz7SJuMETLEQyAktcH3u0QPLKNaxIaInIpkz13BtOC8LzO/yHD/B/rXkesBizFgGLqmuqr3hfy+Pizs0FTXJZA2abz2zjCe5IEDR6LIYCB1cgr4KaCCQfxnES6MJ4KJ9n42FN87gYBqwsDA01VDzzLW1cwMVZ7Mxt8eo+i7UUvpx0FmcuAnOba99tbihnaBptua6qmdtdnMWruS127rbYlwsiW1l7u73FmevNba47be54kwc1H0Mx+Qq7VRbT6Gg57soGsb4p0YBFWmO9K3NpnKzZ10nvKqfxvoVGd0hL4Vk9D5LZt5Jy7bnc4yPNVKSZHQ8nqVgbYq42xFyJVAFE2ioxHpL6qqK2qDT+M+qFzpUreCNw62HArxyqbwQeyUOCQuRMQbNL+h7+W0tLGWFO2knVuVu/7bufp2J66+b4cUyvHNQvDFYWWqORqhv8X6bahbKybx1/j5twpw/v3nCL1385gUNW7GPLeHg9EyL7cYjoZf9Jk9Vp34VR9Bc=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-29T18:36:17.559Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="AZ2d-569KRIRnScUZdnu" version="14.2.7" type="github">
+  <diagram id="wdKQzExWJ-slzCI3__An" name="Page-1">
+    <mxGraphModel dx="782" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-1" value="Отряд расы (игрок)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="140" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-2" value="Отряд расы (компьютер)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="180" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-3" value="Случайный выбор рас" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="230" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-4" value="Раса эльфов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="270" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-5" value="Раса орков" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="310" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-6" value="Раса нежити" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="350" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-7" value="Раса людей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="390" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-8" value="Уровень жизни персонажа" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="430" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-9" value="Улучшение персонажа" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="480" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-10" value="Группа привилегированных персонажей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="520" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-11" value="Группа обычных&lt;br&gt;&amp;nbsp;персонажей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="570" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-12" value="Передвижение персонажей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="620" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ThsmSveKd6_xXnNG1gCC-13" value="Действия&lt;br&gt;персонажей" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="660" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DzrnLzvkAPXYEKWI9zlB-1" value="Статистика ходов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="700" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
