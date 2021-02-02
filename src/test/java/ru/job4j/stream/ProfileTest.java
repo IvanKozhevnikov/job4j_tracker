@@ -4,16 +4,14 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static junit.framework.TestCase.assertEquals;
 
 public class ProfileTest {
     @Test
     public void Collect() {
-
         List<Profile> expected = List.of(
-                new Profile("Moscov"));
-        List<Address> rsl = Profile.collect(expected);
-        assertThat(rsl, is(expected));
+                new Profile("Moscow", "Dostoevskogo", 10, 9));
+        List<Address> rsl = Logic.collect(expected);
+        assertEquals(rsl, expected);
     }
 }
