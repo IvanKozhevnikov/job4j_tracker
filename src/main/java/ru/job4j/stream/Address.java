@@ -60,4 +60,8 @@ public class Address {
                 ", apartment=" + apartment +
                 '}';
     }
+
+    public Object compareTo(Address o2) {
+        return null;
+    }
 }
