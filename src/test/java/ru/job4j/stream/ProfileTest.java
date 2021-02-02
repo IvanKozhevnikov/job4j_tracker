@@ -12,7 +12,7 @@ public class ProfileTest {
     public void Collect() {
 
         List<Profile> expected = List.of(
-                new Profile(new Address("Moscov", "Dostoevskogo", 10, 9)));
+                new Profile("Moscov"));
         List<Address> rsl = Profile.collect(expected);
         assertThat(rsl, is(expected));
     }
