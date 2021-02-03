@@ -63,15 +63,15 @@ public class BankService {
      * @return возвращает данные о пользователе если он есть в
      * системе или null если нет.
      */
+
     public User findByPassport(String passport) {
-        for (User user : users.keySet()) {
-            if (user.getPassport().equals(passport)) {
-                return user;
-            }
-        }
-        return null;
+        return users.keySet()
+                .stream()
+                .filter(user -> user.getPassport().equals(passport))
+                .findFirst()
+                .orElse(null);
     }
-    
+
     /**
      * Метод ищет пользователя по реквизитам.
      * Метод принимает на вход номер паспорта и реквизиты
@@ -83,15 +83,15 @@ public class BankService {
      * @param requisite реквизиты по которым осуществляется поиск счёта.
      * @return метод возвращает счёт если он найден или null если нет.
      */
+
     public Account findByRequisite(String passport, String requisite) {
         User findUser = findByPassport(passport);
         if (findUser != null) {
-            List<Account> listAccount = users.get(findUser);
-            for (Account account : listAccount) {
-                if (account.getRequisite().equals(requisite)) {
-                    return account;
-                }
-            }
+            return users.get(findUser)
+                    .stream()
+                    .filter(a -> a.getRequisite().equals(requisite))
+                    .findFirst()
+                    .orElse(null);
         }
         return null;
     }
