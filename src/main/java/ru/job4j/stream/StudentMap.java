@@ -7,9 +7,12 @@ import java.util.stream.Collectors;
 public class StudentMap {
     public static Map<String, Integer> collect(List<Student> students) {
         return students.stream()
-                .distinct()
                 .collect(Collectors.toMap(
-                        Student::getSurname, Student::getScore
+                        Student::getSurname, Student::getScore,
+                        (add1, add2) -> {
+                            System.out.println("duplicate key found!");
+                            return add1;
+                        }
                 ));
     }
 }

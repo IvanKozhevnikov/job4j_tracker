@@ -14,6 +14,7 @@ public class StudentMapTest {
         List<Student> list = List.of(
                 new Student(2, "Иванов"),
                 new Student(6, "Дегтярёв"),
+                new Student(6, "Дегтярёв"),
                 new Student(6, "Дегтярёв"));
         String rsl = String.valueOf(StudentMap.collect(list));
 
