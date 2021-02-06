@@ -1,9 +1,6 @@
 package ru.job4j.bank;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Класс описывает модель банковской системы,
@@ -44,9 +41,9 @@ public class BankService {
      * @param account  данные нового счёта пользователя.
      */
     public void addAccount(String passport, Account account) {
-        User findUser = findByPassport(passport);
-        if (findUser != null) {
-            List<Account> listAccount = users.get(findUser);
+        Optional<User> findUser = findByPassport(passport);
+        if (findUser.isPresent()) {
+            List<Account> listAccount = users.get(findUser.get());
             if (!listAccount.contains(account)) {
                 listAccount.add(account);
             }
@@ -64,12 +61,11 @@ public class BankService {
      * системе или null если нет.
      */
 
-    public User findByPassport(String passport) {
+    public Optional<User> findByPassport(String passport) {
         return users.keySet()
                 .stream()
                 .filter(user -> user.getPassport().equals(passport))
-                .findFirst()
-                .orElse(null);
+                .findFirst();
     }
 
     /**
@@ -85,15 +81,11 @@ public class BankService {
      */
 
     public Account findByRequisite(String passport, String requisite) {
-        User findUser = findByPassport(passport);
-        if (findUser != null) {
-            return users.get(findUser)
-                    .stream()
-                    .filter(a -> a.getRequisite().equals(requisite))
-                    .findFirst()
-                    .orElse(null);
-        }
-        return null;
+        Optional<User> findUser = findByPassport(passport);
+        return findUser.flatMap(user -> users.get(user)
+                .stream()
+                .filter(a -> a.getRequisite().equals(requisite))
+                .findFirst()).orElse(null);
     }
 
     /**
