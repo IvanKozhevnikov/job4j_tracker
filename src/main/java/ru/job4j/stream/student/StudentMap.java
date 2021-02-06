@@ -1,4 +1,6 @@
-package ru.job4j.stream;
+package ru.job4j.stream.student;
+
+import ru.job4j.stream.student.Student;
 
 import java.util.List;
 import java.util.Map;

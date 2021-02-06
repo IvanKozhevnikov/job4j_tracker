@@ -1,6 +1,8 @@
 package ru.job4j.stream;
 
 
+import ru.job4j.stream.student.Student;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
