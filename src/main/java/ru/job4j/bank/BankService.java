@@ -66,7 +66,9 @@ public class BankService {
                 .stream()
                 .filter(user -> user.getPassport().equals(passport))
                 .findFirst();
+
     }
+
 
     /**
      * Метод ищет пользователя по реквизитам.
@@ -80,12 +82,13 @@ public class BankService {
      * @return метод возвращает счёт если он найден или null если нет.
      */
 
-    public Account findByRequisite(String passport, String requisite) {
+    public Optional<Account> findByRequisite(String passport, String requisite) {
         Optional<User> findUser = findByPassport(passport);
         return findUser.flatMap(user -> users.get(user)
                 .stream()
-                .filter(a -> a.getRequisite().equals(requisite))
-                .findFirst()).orElse(null);
+                .filter(a -> a.getRequisite()
+                        .equals(requisite))
+                .findFirst());
     }
 
     /**
@@ -108,14 +111,14 @@ public class BankService {
     public boolean transferMoney(String srcPassport, String srcRequisite,
                                  String destPassport, String destRequisite, double amount) {
         boolean rsl = false;
-        Account srcAccount = findByRequisite(srcPassport, srcRequisite);
-        Account destAccount = findByRequisite(destPassport, destRequisite);
-        if ((srcAccount != null) && (destAccount != null)
-                && (srcAccount.getBalance() >= amount)) {
-            srcAccount.setBalance(srcAccount.getBalance() - amount);
-            destAccount.setBalance(destAccount.getBalance() + amount);
+        Optional<Account> srcAccount = findByRequisite(srcPassport, srcRequisite);
+        Optional<Account> destAccount = findByRequisite(destPassport, destRequisite);
+        if ((srcAccount.get().getBalance() >= amount)) {
+            srcAccount.get().setBalance(srcAccount.get().getBalance() - amount);
+            destAccount.get().setBalance(destAccount.get().getBalance() + amount);
             rsl = true;
         }
         return rsl;
     }
+
 }
