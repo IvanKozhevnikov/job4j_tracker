@@ -27,7 +27,8 @@ public class DiapasonTest {
     @Test
     public void whenIndicativeFunctionThenIndicativeResults() {
         List<Double> result = Diapason.diapason(-5, -2, x -> Math.pow(2.71, x));
-        List<Double> expected = Arrays.asList(0.006841534882751672D, 0.018540559532257028D, 0.05024491633241655D);
+        List<Double> expected = Arrays.asList(0.006841534882751672D,
+                0.018540559532257028D, 0.05024491633241655D);
         assertThat(result, is(expected));
     }
 }
