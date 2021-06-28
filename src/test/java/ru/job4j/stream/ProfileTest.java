@@ -8,7 +8,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class ProfileTest {
     @Test
-    public void Collect() {
+    public void collect() {
      /* List<Profile> expected = List.of(
                 new Profile("Moscow", "Dostoevskogo", 10, 9));
         List<Address> rsl = Logic.collect(expected);

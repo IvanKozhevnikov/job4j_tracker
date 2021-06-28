@@ -12,7 +12,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class StudentMapTest {
     @Test
-    public void Collect() {
+    public void collect() {
         /*List<Student> list = List.of(
                 new Student(2, "Иванов"),
                 new Student(6, "Дегтярёв"),
