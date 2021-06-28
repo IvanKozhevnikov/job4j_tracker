@@ -13,12 +13,12 @@ import static junit.framework.TestCase.assertEquals;
 public class StudentMapTest {
     @Test
     public void collect() {
-        /*List<Student> list = List.of(
+        List<Student> list = List.of(
                 new Student(2, "Иванов"),
                 new Student(6, "Дегтярёв"),
                 new Student(6, "Дегтярёв"),
                 new Student(6, "Дегтярёв"));
-        String rsl = String.valueOf(StudentMap.collect(list));
+        Map<String, Integer> rsl = (StudentMap.collect(list));
 
         Map<String, Integer> expected = new HashMap<>();
         {
@@ -26,6 +26,6 @@ public class StudentMapTest {
             expected.put("Дегтярёв", 6);
         }
 
-        assertEquals(rsl, expected);*/
+        assertEquals(rsl, expected);
     }
 }
