@@ -29,8 +29,8 @@ public class SearchAtt {
     }
 
     public static void main(String[] args) {
-        List<Attachment> list = Arrays.asList(new Attachment("bug",110),
-                new Attachment("func",110));
+        List<Attachment> list = Arrays.asList(
+                new Attachment("bug", 110), new Attachment("func", 110));
         System.out.println(filterSize(list));
         System.out.println(filterName(list));
     }
