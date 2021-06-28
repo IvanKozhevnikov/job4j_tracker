@@ -75,14 +75,14 @@ public class ProgrammingLanguage {
 
     @Override
     public String toString() {
-        return "ProgrammingLanguage{" +
-                "name='" + name + '\'' +
-                ", version='" + version + '\'' +
-                ", age=" + age +
-                ", author='" + author + '\'' +
-                ", developer='" + developer + '\'' +
-                ", languageClass='" + languageClass + '\'' +
-                ", extension='" + extension + '\'' +
-                '}';
+        return "ProgrammingLanguage{"
+                + "name='" + name + '\''
+                + ", version='" + version + '\''
+                + ", age=" + age
+                + ", author='" + author + '\''
+                + ", developer='" + developer + '\''
+                + ", languageClass='" + languageClass + '\''
+                + ", extension='" + extension + '\''
+                + '}';
     }
 }
