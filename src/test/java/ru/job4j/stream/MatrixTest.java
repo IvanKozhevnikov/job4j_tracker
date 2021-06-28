@@ -10,7 +10,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class MatrixTest {
     @Test
-    public void Collect() {
+    public void collect() {
         List<List<Integer>> matrix = List.of(
                 List.of(1, 2),
                 List.of(3, 4)
