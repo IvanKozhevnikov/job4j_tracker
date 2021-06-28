@@ -19,13 +19,9 @@ public class StudentMapTest {
                 new Student(6, "Дегтярёв"),
                 new Student(6, "Дегтярёв"));
         Map<String, Integer> rsl = (StudentMap.collect(list));
-
         Map<String, Integer> expected = new HashMap<>();
-        {
-            expected.put("Иванов", 2);
-            expected.put("Дегтярёв", 6);
-        }
-
+        expected.put("Иванов", 2);
+        expected.put("Дегтярёв", 6);
         assertEquals(rsl, expected);
     }
 }
