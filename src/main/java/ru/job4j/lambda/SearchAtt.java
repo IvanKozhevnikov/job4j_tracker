@@ -7,8 +7,7 @@ import java.util.function.Predicate;
 
 public class SearchAtt {
 
-    private static List<Attachment> filter(List<Attachment> list
-            , Predicate<Attachment> func) {
+    private static List<Attachment> filter(List<Attachment> list, Predicate<Attachment> func) {
         List<Attachment> rsl = new ArrayList<>();
         for (Attachment att : list) {
             if (func.test(att)) {
@@ -31,8 +30,7 @@ public class SearchAtt {
 
     public static void main(String[] args) {
         List<Attachment> list = Arrays.asList(
-                new Attachment("bug",110),
-                new Attachment("func",110));
+                new Attachment("bug",110), new Attachment("func",110));
         System.out.println(filterSize(list));
         System.out.println(filterName(list));
     }
