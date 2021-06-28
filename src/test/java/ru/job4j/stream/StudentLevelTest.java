@@ -1,8 +1,8 @@
 package ru.job4j.stream;
 
 import org.junit.Test;
-import ru.job4j.stream.streamApiUpgrade.Student;
-import ru.job4j.stream.streamApiUpgrade.StudentLevel;
+import ru.job4j.stream.streamapiupgrade.Student;
+import ru.job4j.stream.streamapiupgrade.StudentLevel;
 
 import java.util.ArrayList;
 import java.util.List;

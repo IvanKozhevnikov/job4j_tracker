@@ -1,4 +1,4 @@
-package ru.job4j.stream.streamApiUpgrade;
+package ru.job4j.stream.streamapiupgrade;
 
 import java.util.Objects;
 
